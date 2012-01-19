@@ -12,7 +12,7 @@ Authors
 Installation
 ------------
 
-	git clone https://github.com/ibolmo/sfErrorNotifierPlugin.git ./plugins/sfErrorNotifierPlugin
+	git clone https://github.com/jupeter/sfErrorNotifierPlugin.git ./plugins/sfErrorNotifierPlugin
 	git submodule update --init
 
 Configure
