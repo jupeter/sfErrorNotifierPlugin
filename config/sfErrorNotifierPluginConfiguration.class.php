@@ -5,6 +5,7 @@ class sfErrorNotifierPluginConfiguration extends sfPluginConfiguration
   public function initialize()
   {
     if (!sfConfig::get('app_sf_error_notifier_plugin_enabled')) return;
+    if (php_sapi_name() === 'cli') return;
 
     $this->dispatcher->connect('application.throw_exception', array('sfErrorNotifier', 'notify'));
 

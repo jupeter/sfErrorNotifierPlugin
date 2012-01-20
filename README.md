@@ -20,17 +20,15 @@ Configure
 
 Take a look at all the configure options in:
 
-	./plugins/sfErrorNotifierPlugin/config/app.yml
+	./plugins/sfErrorNotifierPlugin/config/app.yml (but don't change it!)
 
 Update your application(s) `app.yml`. For example:
 
 	# apps/frontend/config/app.yml
-	all:
+	prod:
 	  sf_error_notifier_plugin:
+            enabled: true
 	    email_to: email@domain.tld
-	dev:
-	  sf_error_notifier_plugin:
-	    enabled: false
 			
 Modify Email Template
 ---------------------
@@ -43,6 +41,10 @@ Modify Email Template
 
 Changelog
 ---------
+
+### 2012-01-20 | 2.1
+* Disable sfErrorNotifier by default
+* Fix error in command line (#1)
 
 ### 2011-03-09 | 2.0
 * New and improved. Uses Swift_Mailer as mailer. Partial for email body.
