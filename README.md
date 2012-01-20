@@ -44,7 +44,7 @@ Changelog
 
 ### 2012-01-20 | 2.1
 * Disable sfErrorNotifier by default
-* Fix error in command line: jupeter/sfErrorNotifierPlugin#1
+* Fix error in command line: jupeter#1
 
 ### 2011-03-09 | 2.0
 * New and improved. Uses Swift_Mailer as mailer. Partial for email body.
